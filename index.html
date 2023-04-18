@@ -35,7 +35,6 @@ http://tympanus.net/codrops/2013/06/18/caption-hover-effects/
 </head>
 <body id="top" data-spy="scroll" data-offset="50" data-target=".navbar-collapse">
 
-
 <!-- Preloader section -->
 
 <div class="preloader">
@@ -45,7 +44,7 @@ http://tympanus.net/codrops/2013/06/18/caption-hover-effects/
 
 <!-- Navigation section  -->
 
-  <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <!-- <div class="navbar navbar-default navbar-fixed-top" role="navigation">
     <div class="container">
 
       <div class="navbar-header">
@@ -66,7 +65,7 @@ http://tympanus.net/codrops/2013/06/18/caption-hover-effects/
        </div>
 
     </div>
-  </div>
+  </div> -->
 
 
 <!-- Home section -->
@@ -75,11 +74,18 @@ http://tympanus.net/codrops/2013/06/18/caption-hover-effects/
   <div class="overlay"></div>
   <div class="container">
     <div class="row">
-
+      <audio controls autoplay id="audio" hidden>
+        <source src="music/main.mp3" type="audio/mpeg">
+      </audio>
       <div class="col-md-offset-1 col-md-10 col-sm-12 wow fadeInUp" data-wow-delay="0.3s">
-        <h1 class="wow fadeInUp" data-wow-delay="0.6s">Let's take a snapshot</h1>
-        <p class="wow fadeInUp" data-wow-delay="0.9s">Snapshot website template is available for free download. Anyone can modify and use it for any site. Please tell your friends about <a rel="nofollow" href="http://www.templatemo.com">templatemo</a>. Thank you.</p>
-        <a href="#about" class="smoothScroll btn btn-success btn-lg wow fadeInUp" data-wow-delay="1.2s">Learn more</a>
+        <h3 class="wow fadeInUp" data-wow-delay="0.6s" style="color:white">You're Invited to</h3>
+        <h2 class="wow fadeInUp" data-wow-delay="0.6s" style="color:white">Our Wedding</h2>
+        <h1 class="wow fadeInUp" data-wow-delay="0.6s">Vriska Eksa Hardhani</h1>
+        <small class="wow fadeInUp" style="color:white" data-wow-delay="0.9s">Putri dari Bapak & Ibu</small>
+        <h1 class="wow fadeInUp" data-wow-delay="0.6s">&</h1>
+        <h1 class="wow fadeInUp" data-wow-delay="0.6s">Luthfi Fadle Rynaldy</h1>
+        <small class="wow fadeInUp" style="color:white" data-wow-delay="0.9s">Putra dari Bapak & Ibu </small>
+        <!-- <a href="#about" class="smoothScroll btn btn-success btn-lg wow fadeInUp" data-wow-delay="1.2s">Learn more</a> -->
       </div>
 
     </div>
@@ -334,6 +340,9 @@ http://tympanus.net/codrops/2013/06/18/caption-hover-effects/
 <a href="#" class="go-top"><i class="fa fa-angle-up"></i></a>
 
 <!-- Javascript  -->
+<script>
+  document.getElementById('audio').play();
+</script>
 <script src="js/jquery.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/vegas.min.js"></script>
@@ -343,6 +352,5 @@ http://tympanus.net/codrops/2013/06/18/caption-hover-effects/
 <script src="js/smoothscroll.js"></script>
 <script src="js/wow.min.js"></script>
 <script src="js/custom.js"></script>
-
 </body>
 </html>
