@@ -74,7 +74,7 @@ http://tympanus.net/codrops/2013/06/18/caption-hover-effects/
   <div class="overlay"></div>
   <div class="container">
     <div class="row">
-      <audio controls autoplay id="audio" hidden>
+      <audio id="audio" controls preload="auto" autoplay loop stle="margin-top:-200px">
         <source src="music/main.mp3" type="audio/mpeg">
       </audio>
       <div class="col-md-offset-1 col-md-10 col-sm-12 wow fadeInUp" data-wow-delay="0.3s">
@@ -340,9 +340,6 @@ http://tympanus.net/codrops/2013/06/18/caption-hover-effects/
 <a href="#" class="go-top"><i class="fa fa-angle-up"></i></a>
 
 <!-- Javascript  -->
-<script>
-  document.getElementById('audio').play();
-</script>
 <script src="js/jquery.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/vegas.min.js"></script>
