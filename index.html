@@ -8,7 +8,7 @@
 	<meta name="keywords" content="">
 	<meta name="description" content="">
 
-	<title>Invitation | V & L</title>
+	<title>KAMI NIKAH!!! | Vriska & Luthfi </title>
 <!--
 Snapshot Template
 http://www.templatemo.com/tm-493-snapshot
@@ -31,8 +31,23 @@ http://tympanus.net/codrops/2013/06/18/caption-hover-effects/
 
 	<!-- Google web font  -->
 	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,300' rel='stylesheet' type='text/css'>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap" rel="stylesheet">
 	
 </head>
+<style>
+  .alex-brush-regular {
+    font-family: "Alex Brush", cursive;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: lowercase;
+  }
+
+  td {
+    padding: 0 15px;
+  }
+</style>
 <body id="top" data-spy="scroll" data-offset="50" data-target=".navbar-collapse">
 
 <!-- Preloader section -->
@@ -74,17 +89,50 @@ http://tympanus.net/codrops/2013/06/18/caption-hover-effects/
   <div class="overlay"></div>
   <div class="container">
     <div class="row">
-      <audio id="audio" controls preload="auto" autoplay loop stle="margin-top:-200px">
+      <!-- <audio id="audio" controls preload="auto" autoplay loop stle="margin-top:-200px">
         <source src="music/main.mp3" type="audio/mpeg">
-      </audio>
+      </audio> -->
       <div class="col-md-offset-1 col-md-10 col-sm-12 wow fadeInUp" data-wow-delay="0.3s">
-        <h3 class="wow fadeInUp" data-wow-delay="0.6s" style="color:white">You're Invited to</h3>
-        <h2 class="wow fadeInUp" data-wow-delay="0.6s" style="color:white">Our Wedding</h2>
-        <h1 class="wow fadeInUp" data-wow-delay="0.6s">Vriska Eksa Hardhani</h1>
+        <h3 class="wow fadeInUp" data-wow-delay="0.6s" style="color:white">Intimate Wedding</h3>
+        <h3 class="wow fadeInUp" data-wow-delay="0.6s" style="color:white">of</h3>
+        <h1 class="wow alex-brush-regular" data-wow-delay="0.6s" style="color:white; font-size: xxx-large !important;">Vriska & Luthfi</h1>
+        <small class="wow fadeInUp" data-wow-delay="0.6s" style="color:white">Saturday, 25th May 2024</small>
+        <div class="row" style="margin: 50px 0px; border-bottom: 1px solid white;">
+          <table style="margin: auto;">
+            <tr>
+              <td>
+                <p class="wow fadeInUp" data-wow-delay="0.6s" style="color:white; font-weight: bold; font-size: xx-large;" id="days"></p>
+              </td>
+              <td>
+                <p class="wow fadeInUp" data-wow-delay="0.6s" style="color:white; font-weight: bold; font-size: xx-large;" id="hours"></p>
+              </td>
+              <td>
+                <p class="wow fadeInUp" data-wow-delay="0.6s" style="color:white; font-weight: bold; font-size: xx-large;" id="minutes"></p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <small class="wow fadeInUp" data-wow-delay="0.6s" style="color:white">Days</small>
+              </td>
+              <td>
+                <small class="wow fadeInUp" data-wow-delay="0.6s" style="color:white">Hours</small>
+              </td>
+              <td>
+                <small class="wow fadeInUp" data-wow-delay="0.6s" style="color:white">Minutes</small>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div>
+          <h3 class="wow fadeInUp" data-wow-delay="0.6s" style="color:white">Dear</h3>
+          <h2 class="wow fadeInUp" data-wow-delay="0.6s" style="color:white; text-transform: capitalize;">Udin petot</h2>
+          <h3 class="wow fadeInUp" data-wow-delay="0.6s" style="color:white">Please welcome to our wedding</h3>
+        </div>
+        <!-- <h1 class="wow fadeInUp" data-wow-delay="0.6s">Vriska Eksa Hardhani</h1>
         <small class="wow fadeInUp" style="color:white" data-wow-delay="0.9s">Putri dari Bapak & Ibu</small>
         <h1 class="wow fadeInUp" data-wow-delay="0.6s">&</h1>
         <h1 class="wow fadeInUp" data-wow-delay="0.6s">Luthfi Fadle Rynaldy</h1>
-        <small class="wow fadeInUp" style="color:white" data-wow-delay="0.9s">Putra dari Bapak & Ibu </small>
+        <small class="wow fadeInUp" style="color:white" data-wow-delay="0.9s">Putra dari Bapak & Ibu </small> -->
         <!-- <a href="#about" class="smoothScroll btn btn-success btn-lg wow fadeInUp" data-wow-delay="1.2s">Learn more</a> -->
       </div>
 
@@ -349,5 +397,38 @@ http://tympanus.net/codrops/2013/06/18/caption-hover-effects/
 <script src="js/smoothscroll.js"></script>
 <script src="js/wow.min.js"></script>
 <script src="js/custom.js"></script>
+<script>
+  // Set the date we're counting down to
+  var countDownDate = new Date("May 25, 2024 10:30:00").getTime();
+  
+  // Update the count down every 1 second
+  var x = setInterval(function() {
+  
+    // Get today's date and time
+    var now = new Date().getTime();
+      
+    // Find the distance between now and the count down date
+    var distance = countDownDate - now;
+      
+    // Time calculations for days, hours, minutes and seconds
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    // var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+      
+    // Output the result in an element with id="demo"
+    document.getElementById("days").innerHTML = days;
+    document.getElementById("hours").innerHTML = hours;
+    document.getElementById("minutes").innerHTML = minutes;
+    document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
+    + minutes + "m ";
+      
+    // If the count down is over, write some text 
+    if (distance < 0) {
+      clearInterval(x);
+      document.getElementById("demo").innerHTML = "EXPIRED";
+    }
+  }, 1000);
+  </script>
 </body>
 </html>
