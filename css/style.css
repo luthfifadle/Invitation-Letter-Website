@@ -43,7 +43,7 @@ h1 {
 }
 
 h2 {
-  color: #A7BDD4;
+  color: #7C98AE;
   font-size: 1.2rem;
   font-weight: bold;
   letter-spacing: 4px;
@@ -182,7 +182,7 @@ a:hover, a:active, a:focus {
 .sk-spinner-pulse {
   width: 60px;
   height: 60px;
-  background-color: #e44c65;
+  background-color: #A7BDD4;
   border-radius: 100%;
   margin: 40px auto;
   -webkit-animation: sk-pulseScaleOut 1s infinite ease-in-out;
@@ -417,7 +417,7 @@ a:hover, a:active, a:focus {
 }
 
 #about .team-thumb:hover {
-  background: #304352;
+  background: #7C98AE;
 }
 
 #about .team-thumb:hover .image-holder {
@@ -427,6 +427,7 @@ a:hover, a:active, a:focus {
 
 #about .team-thumb:hover .heading {
   top: -10px;
+  color: #ffffff;
 }
 
 #about .team-thumb .description {
