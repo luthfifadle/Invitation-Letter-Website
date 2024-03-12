@@ -125,7 +125,7 @@ http://tympanus.net/codrops/2013/06/18/caption-hover-effects/
         </div>
         <div>
           <h3 class="wow fadeInUp" data-wow-delay="0.6s" style="color:white">Dear</h3>
-          <h2 class="wow fadeInUp" data-wow-delay="0.6s" style="color:white; text-transform: capitalize;">Udin petot</h2>
+          <h2 class="wow fadeInUp" data-wow-delay="0.6s" style="color:white; text-transform: capitalize;" id="name"></h2>
           <h3 class="wow fadeInUp" data-wow-delay="0.6s" style="color:white">Please welcome to our wedding</h3>
         </div>
         <!-- <h1 class="wow fadeInUp" data-wow-delay="0.6s">Vriska Eksa Hardhani</h1>
@@ -429,6 +429,36 @@ http://tympanus.net/codrops/2013/06/18/caption-hover-effects/
       document.getElementById("demo").innerHTML = "EXPIRED";
     }
   }, 1000);
+  </script>
+  <script>
+    const url = window.location.href;
+    const data = parseURLParams(url);
+
+    if (data) {
+      document.getElementById("name").innerHTML = data.name;
+    } else {
+      document.getElementById("name").innerHTML = "Penerima Undangan";
+    }
+
+    function parseURLParams(url) {
+        var queryStart = url.indexOf("?") + 1,
+            queryEnd   = url.indexOf("#") + 1 || url.length + 1,
+            query = url.slice(queryStart, queryEnd - 1),
+            pairs = query.replace(/\+/g, " ").split("&"),
+            parms = {}, i, n, v, nv;
+
+        if (query === url || query === "") return;
+
+        for (i = 0; i < pairs.length; i++) {
+            nv = pairs[i].split("=", 2);
+            n = decodeURIComponent(nv[0]);
+            v = decodeURIComponent(nv[1]);
+
+            if (!parms.hasOwnProperty(n)) parms[n] = [];
+            parms[n].push(nv.length === 2 ? v : null);
+        }
+        return parms;
+    }
   </script>
 </body>
 </html>
