@@ -20,7 +20,8 @@ Caption Hover Effects
 http://tympanus.net/codrops/2013/06/18/caption-hover-effects/
 -->
 	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/animate.min.css">
+	<!-- <link rel="stylesheet" href="css/animate.min.css"> -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/font-awesome.min.css">
   	<link rel="stylesheet" href="css/component.css">
 	
@@ -82,8 +83,8 @@ http://tympanus.net/codrops/2013/06/18/caption-hover-effects/
   <div class="overlay"></div>
   <div class="container">
     <div class="row">
-      <div class="col-md-offset-1 col-md-10 col-sm-12 wow animate__animated animate__fadeInUp" data-wow-delay="0.3s">
-        <h3 class="wow animate__animated animate__fadeInUp" data-wow-delay="1s" style="color:white">Intimate Wedding</h3>
+      <div class="col-md-offset-1 col-md-10 col-sm-12 wow animate__animated animate__fadeInUp" data-aos="fade-up" data-aos-delay="1000" data-aos-duration="3000" data-wow-delay="0.3s">
+        <h3 class="wow animate__animated animate__fadeInUp" data-aos="fade-up" data-wow-delay="1s" style="color:white">Intimate Wedding</h3>
         <h3 class="wow animate__animated animate__fadeInUp" data-wow-delay="1s" style="color:white">of</h3>
         <h1 class="wow alex-brush-regular" data-wow-delay="1s" style="color:white; font-size: xxx-large !important;">Vriska & Luthfi</h1>
         <small class="wow animate__animated animate__fadeInUp" data-wow-delay="1s" style="color:white">Saturday, 25th May 2024</small>
@@ -351,6 +352,7 @@ http://tympanus.net/codrops/2013/06/18/caption-hover-effects/
 <a href="#" class="go-top"><i class="fa fa-angle-up"></i></a>
 
 <!-- Javascript  -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="js/jquery.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/vegas.min.js"></script>
@@ -361,6 +363,7 @@ http://tympanus.net/codrops/2013/06/18/caption-hover-effects/
 <script src="js/wow.min.js"></script>
 <script src="js/custom.js"></script>
 <script>
+  AOS.init();
   $(document).ready(function(){
     setTimeout(PlayMusic,3000);
     // disableScroll();
