@@ -1,7 +1,7 @@
 AOS.init();
   $(document).ready(function(){
     setTimeout(PlayMusic,3000);
-    // disableScroll();
+    disableScroll();
   });
   // Set the date we're counting down to
   var countDownDate = new Date("May 25, 2024 10:30:00").getTime();
@@ -48,8 +48,7 @@ AOS.init();
 
   if (data && data.mengundang != undefined) {
     document.getElementById("name").innerHTML = data.mengundang;
-    document.getElementById("namersvp").value = 'tset';
-    // document.getElementById("namersvp").value = data.mengundang;
+    document.getElementById("namersvp").value = data.mengundang;
   } else {
     document.getElementById("name").innerHTML = "Penerima Undangan";
   }
