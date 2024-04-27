@@ -26,8 +26,7 @@ AOS.init();
     document.getElementById("hours").innerHTML = hours;
     document.getElementById("minutes").innerHTML = minutes;
     document.getElementById("seconds").innerHTML = seconds;
-    document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
-    + minutes + "m ";
+    // document.getElementById("countdown").innerHTML = days + "d " + hours + "h "+ minutes + "m ";
       
     // If the count down is over, write some text 
     if (distance < 0) {

@@ -3,8 +3,6 @@ function rsvpSubmit ()
     var name = $('#namersvp').val();
     var selection = $('#rsvp').val();
 
-    console.log(`${name} + ${selection}`);
-
     var saveData = $.ajax({
         type: 'POST',
         url: "https://script.google.com/macros/s/AKfycbzXngVa-GIUoHABI1X-y1Vcpc_2r9pUeICOUZrOvqZSFScJ4bxnDED8ChDZkxS-V92O/exec",
