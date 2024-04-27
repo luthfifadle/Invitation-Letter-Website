@@ -48,7 +48,8 @@ AOS.init();
 
   if (data && data.mengundang != undefined) {
     document.getElementById("name").innerHTML = data.mengundang;
-    document.getElementById("name_rsvp").value = data.mengundang;
+    document.getElementById("namersvp").value = 'tset';
+    // document.getElementById("namersvp").value = data.mengundang;
   } else {
     document.getElementById("name").innerHTML = "Penerima Undangan";
   }
