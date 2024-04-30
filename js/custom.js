@@ -33,9 +33,12 @@ $(document).ready(function() {
   $(function() {
     $('body').vegas({
         slides: [
-            { src: 'images/lv2/3.JPG' },
-            { src: 'images/lv2/1.JPG' },
-            { src: 'images/lv2/6.JPG' }
+            { src: 'images/lv2/2.JPG' },
+            { src: 'images/lv2/4.JPG' },
+            { src: 'images/lv2/5.JPG' }
+            // { src: 'images/lv2/3.JPG' },
+            // { src: 'images/lv2/1.JPG' },
+            // { src: 'images/lv2/6.JPG' }
         ],
         timer: false,
         transition: [ 'zoomIn', ],
